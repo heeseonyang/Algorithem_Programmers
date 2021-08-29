@@ -13,7 +13,7 @@ public class test1_divisorsum {
 
 		for (int i = left; i <= right; i++) { // left~right까지의 숫자 구하기
 			int cnt = 0;
-			for (int j = 1; j <= left; j++) {// 사잇값의 약수 구하기
+			for (int j = 1; j <= i; j++) {// 사잇값의 약수 구하기
 				if (i % j == 0) {
 					cnt++;// 약수의 갯수 셈
 				}
@@ -24,7 +24,7 @@ public class test1_divisorsum {
 			} else {
 				answer -= i;
 			}
-			left++;
+			
 		}
 
 		System.out.println(answer);
